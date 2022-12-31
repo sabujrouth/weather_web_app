@@ -46,13 +46,13 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
-    <h1 class="my-4 text-center">Weather for Delhi</h1>
+    <h1 class="my-4 text-center">Weather for <span id="cityName"></span></h1>
     <div class="container">
         <main>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
@@ -65,10 +65,10 @@
                             <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>10 users included</li>
-                                <li>2 GB of storage</li>
-                                <li>Email support</li>
-                                <li>Help center access</li>
+                                <li>Temprature is <span id="temp"></span></li>
+                                <li>Min Temprature is <span id="min_temp"></span></li>
+                                <li>Max Temprature is <span id="max_temp"></span></li>
+                                
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
                         </div>
@@ -83,10 +83,10 @@
                             <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>20 users included</li>
-                                <li>10 GB of storage</li>
-                                <li>Priority email support</li>
-                                <li>Help center access</li>
+                                <li><li>Wind Degree is <span id="wind_degrees"></span></li></li>
+                                <li><li>Feels Like is <span id="feels_like"></span></li></li>
+                                <li><li>Humidity is <span id="humidity"></span></li></li>
+                                
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
                         </div>
@@ -101,10 +101,10 @@
                             <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>30 users included</li>
-                                <li>15 GB of storage</li>
-                                <li>Phone and email support</li>
-                                <li>Help center access</li>
+                                <li><li>Wind Speed is <span id="wind_speed"></span></li></li>
+                                <li><li>Sunrise Time is <span id="sunrise"></span></li></li>
+                                <li><li>Sunset Time is <span id="sunset"></span></li></li>
+                                
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
                         </div>
